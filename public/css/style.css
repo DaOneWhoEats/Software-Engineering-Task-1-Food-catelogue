@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling with background image, font, and margin settings */
+body {
+  background-image: url('https://thumbs.dreamstime.com/b/food-cooking-background-ingredients-preparation-vegan-dishes-vegetables-roots-spices-mushrooms-herbs-cutting-board-chef-342341462.jpg');  /* Background image */
+  background-size: cover;  /* Ensures the image covers the entire page */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-position: center;  /* Centers the background image */
+  background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  color: #fff; /* White text for readability */
+}
+
+/* Main content styling */
+main {
+  max-width: 900px;
+  margin: auto;
+  padding: 0.5rem;
+  text-align: center;
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #653535; /* Darker background for nav */
+  padding: 0.5rem 1rem;
+  border-bottom: 2px solid #444; /* Slightly lighter border for definition */
+}
+
+nav img {
+  height: 80px;
+}
+
+/* Navigation list styling */
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav li {
+  margin-right: 1rem;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #f8b400; /* Yellow text for contrast */
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #d97706; /* Accent color for interactivity */
+}
+
+/* Navigation heading styling */
+nav h1 {
+  color: #f8b400; /* Yellow for branding */
+  margin-bottom: 0.5rem;
+}
+
+/* Container styling for grid layout */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  grid-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 1rem 0;
+}
+
+/* Card styling */
+.card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 17rem;
+  background: #443636; /* Dark card for contrast */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 10px;
+  margin: auto;
+  overflow: hidden;
+  padding: 1rem;  /* Add padding to ensure enough space */
+}
+
+.card-image {
+  width: 100%;
+  height: 15rem;
+  object-fit: cover;
+}
+
+/* Card name styling */
+.card-name {
+  color: #f8b400; /* Yellow for emphasis */
+  font-weight: 700;
+  text-transform: capitalize;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Card about text styling */
+.card-about {
+  width: 15rem;
+  white-space: normal;  /* Allow text to wrap */
+  overflow: hidden;
+  margin-bottom: 1rem;
+  color: #ddd; /* Light gray for secondary text */
+}
+
+/* Button styling */
+.btn {
+  border: none;
+  background: #f8b400; /* Yellow button */
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  margin: 0 1rem;
+  padding: 0.5rem 1.5rem;
+  color: #333; /* Dark text for contrast */
+  transition: all 0.25s ease-in-out;
+  margin-bottom: 1rem;
+}
+
+.btn:focus,
+.btn:hover {
+  background: #d97706; /* Darker yellow for hover effect */
+}
+
+/* Magnification effect for images */
+img {
+  transition: transform 0.3s ease; /* Smooth transition for all images */
+}
+
+img:hover {
+  transform: scale(1.1); /* Magnify all images slightly on hover */
+}

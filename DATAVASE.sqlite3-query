@@ -1,0 +1,3 @@
+-- database: ../../../../path/to/database.db
+SELECT * FROM extension;
+SELECT * FROM extension WHERE language LIKE '#HTML';

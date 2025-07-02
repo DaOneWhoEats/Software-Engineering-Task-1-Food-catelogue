@@ -1,0 +1,238 @@
+/* Ensure html and body take full height */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Background image settings */
+body {
+  background-image: url('https://t4.ftcdn.net/jpg/04/43/37/07/360_F_443370711_sqHRnSIQovW6uyQ5ZwDpd4kjCG8Q6swm.jpg');  /* Your background image */
+  background-size: cover;  /* Ensures the image covers the entire page */
+  background-repeat: no-repeat;  /* Prevents the image from repeating */
+  background-position: center;  /* Centers the background image */
+  background-attachment: fixed;  /* Keeps the background fixed when scrolling */
+  font-family: Arial, sans-serif;  /* Font settings */
+  color: #0e0d0d;  /* Default text color */
+}
+
+/* Main content container */
+#main {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+  background: rgba(63, 59, 59, 0.3); /* Semi-transparent background for readability */
+  border-radius: 10px;  /* Rounded corners */
+  transition: margin-left 0.5s;  /* Smooth transition for sidebar */
+}
+
+/* Sidebar styling */
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  position: absolute;
+  top: 20px;
+  left: 20px; /* Position the button in the top left corner */
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Headings styling */
+h1, h2 {
+  color: #f8b400;  /* Yellow color for contrast */
+}
+
+/* Paragraph styling */
+p {
+  color: #fff;  /* White text for better readability */
+}
+
+/* Navigation styling */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(63, 59, 59, 0.3); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+nav img {
+  height: 80px;
+}
+
+nav h1 {
+  color: #f8b400;
+}
+
+.topnav {
+  list-style: none;
+  display: flex;
+}
+
+.topnav li {
+  margin-right: 1rem;
+  position: relative;
+}
+
+.topnav a {
+  text-decoration: none;
+  color: #f8b400;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  color: #d97706;
+}
+
+/* Dropdown Menu styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8b400;
+  min-width: 160px;
+  z-index: 2;
+}
+
+.dropdown-content a {
+  color: white;  /* Initial link color */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #d97706;  /* Background color on hover */
+}
+
+/* Keep dropdown open when hovered */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #d97706;
+}
+
+/* Hero Section styling */
+.hero {
+  position: relative;
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-text {
+  z-index: 1;
+  background-color: rgba(187, 182, 182, 0.5);  
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.25rem;
+}
+
+/* Featured Recipes Section */
+.featured-recipes {
+  padding: 2rem;
+  text-align: center;
+  background: rgba(63, 59, 59, 0.3);  /* Semi-transparent background */
+}
+
+.featured-recipes h2 {
+  font-size: 2rem;
+}
+
+.recipes-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.recipe-card {
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  padding: 1rem;
+  width: 30%;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.recipe-image {
+  width: 400px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #f8b400;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.btn:hover {
+  background-color: #d97706;
+}
+
+/* Footer styling */
+footer {
+  background: rgba(63, 59, 59, 0.3);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+  color: white;
+}

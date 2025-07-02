@@ -1,0 +1,171 @@
+/* Set a background image, cover the entire screen, and keep it fixed during scrolling */
+body {
+  background-image: url('https://i0.wp.com/picjumbo.com/wp-content/uploads/autumn-background-with-space-for-text-and-leaves-around-free-image.jpeg?w=600&quality=80');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f8f9fa; /* Fallback background color */
+}
+
+/* Main container with relative positioning and padding */
+#main {
+  position: relative;
+  z-index: 1;
+  color: #e7dfdf; /* Light text color */
+  padding: 2rem;
+}
+
+/* Header navigation styling: flex layout, spacing, background, and padding */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(138, 136, 136, 0.6); /* Semi-transparent background */
+  padding: 1rem;
+  border-radius: 10px; /* Rounded corners */
+}
+
+/* Logo image styling in the header */
+header nav img {
+  height: 80px;
+}
+
+/* Header title color */
+header nav h1 {
+  color: #f8b400; /* Bright yellow color */
+}
+
+/* Navigation list styling: remove list style, flex layout */
+.topnav {
+  list-style: none;
+  display: flex;
+}
+
+/* Navigation list items styling: margin and relative positioning */
+.topnav li {
+  margin-right: 1rem;
+  position: relative;
+}
+
+/* Navigation links styling: no underline, color, and bold */
+.topnav a {
+  text-decoration: none;
+  color: #f8b400;
+  font-weight: 700;
+}
+
+/* Hover effect for navigation links */
+.topnav a:hover {
+  color: #d97706; /* Darker yellow color */
+}
+
+/* Dropdown content styling: hidden by default, absolute positioning */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f8b400;
+  min-width: 160px;
+  z-index: 2;
+}
+
+/* Dropdown links styling */
+.dropdown-content a {
+  color: #877878;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover effect for dropdown links */
+.dropdown-content a:hover {
+  background-color: #d97706; /* Darker yellow */
+}
+
+/* Display dropdown content when hovering over the dropdown */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change dropdown button color on hover */
+.dropdown:hover .dropbtn {
+  color: #d97706;
+}
+
+/* About section styling: padding, background, and border radius */
+.about {
+  padding: 2rem;
+  background: rgba(209, 206, 206, 0.3);
+  border-radius: 10px;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Center align text */
+}
+
+/* Flex container styling for centering items */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About content flex layout: row direction, align items center */
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* About image styling: size, border radius, and margin */
+.about-image {
+  width: 50%;
+  height: 100px;
+  border-radius: 10px;
+  margin-right: 2rem;
+}
+
+/* Text content styling: width and center alignment */
+.text-content {
+  width: 50%;
+  
+}
+
+.text-content h2 {
+  font-size: 2rem;
+  color: #f8b400; /* Bright yellow */
+}
+
+.text-content p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Cuisine section styling: padding, text alignment, background, and border radius */
+.cuisine-section {
+  padding: 2rem;
+  text-align: center;
+  background: rgba(235, 231, 231, 0.3);
+  border-radius: 10px;
+  margin-top: 2rem;
+  font-size: large;
+}
+
+/* Cuisine section title color and font size */
+.cuisine-section h2 {
+  font-size: 2rem;
+  color: #f8b400; /* Bright yellow */
+}
+
+/* Footer styling: background color, text alignment, padding, color, and margin */
+footer {
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 1rem;
+  color: #fff;
+  margin-top: 2rem;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self';" />
+    <link rel="stylesheet" href="css/style_homepage.css" />
+    <title>The Food Catalogue</title>
+  </head>
+  <body>
+
+    <!-- Main content -->
+    <div id="main">
+      
+      <!-- Header Section -->
+      <header>
+        <nav>
+          <img src="images/logo.png" alt="food catalogue site logo" />
+          <h1>Welcome to The Food Catalogue</h1>
+          <ul class="topnav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="catalogue.html">Recipes</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="techniques.html">Cooking Techniques</a></li>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Hero Section with large image -->
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Discover Delicious Recipes</h2>
+          <p>Explore the world of cooking with our curated collection of recipes, tips, and techniques!</p>
+        </div>
+      </section>
+
+      <!-- Featured Recipes Section -->
+      <section class="featured-recipes">
+        <h2>Featured cuisines</h2>
+        <div class="recipes-container">
+          <!-- Placeholder for recipe images -->
+          <div class="recipe-card">
+            <img src="images/greekcuisine.png" alt="Recipe Image 1" class="recipe-image" />
+            <h3>Greek Cuisine</h3>
+            <a href="about.html" class="btn">learn more</a>
+          </div>
+          <div class="recipe-card">
+            <img src="images/asiancuisine.png" alt="Recipe Image 2" class="recipe-image" />
+            <h3>Asian Cuisine</h3>
+            <a href="about.html" class="btn">Learn more</a>
+          </div>
+          <div class="recipe-card">
+            <img src="images/middleEastern.png" alt="Recipe Image 3" class="recipe-image" />
+            <h3>Middle Eastern Cuisine</h3>
+            <a href="about.html" class="btn">Learn more</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("sidebar").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+      }
+
+      function closeNav() {
+        document.getElementById("sidebar").style.width = "0";
+        document.getElementById("main").style.marginLeft= "0";
+      }
+    </script>
+  </body>
+</html>
