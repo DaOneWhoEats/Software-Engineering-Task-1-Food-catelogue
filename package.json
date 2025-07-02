@@ -1,18 +1,27 @@
 {
-  "name": "programming_for_the_web_task_template",
-  "version": "1.0.0",
-  "description": "A template for the demo Node.JS Progressive Web Application with a SQLite backend.",
-  "main": "index.js",
+  "name": "util-deprecate",
+  "version": "1.0.2",
+  "description": "The Node.js `util.deprecate()` function with browser support",
+  "main": "node.js",
+  "browser": "browser.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "Ben Jones",
-  "license": "CC-BY-NC-SA-4.0",
-  "dependencies": {
-    "body-parser": "^1.20.3",
-    "express": "^4.18.2",
-    "sqlite3": "^5.1.6"
-  }
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/TooTallNate/util-deprecate.git"
+  },
+  "keywords": [
+    "util",
+    "deprecate",
+    "browserify",
+    "browser",
+    "node"
+  ],
+  "author": "Nathan Rajlich <nathan@tootallnate.net> (http://n8.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TooTallNate/util-deprecate/issues"
+  },
+  "homepage": "https://github.com/TooTallNate/util-deprecate"
 }
